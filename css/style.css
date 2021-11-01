@@ -4,6 +4,7 @@ body {
 
 .navbar {
   background-color: #171717;
+  border-bottom: 1px solid #333333;
 }
 
 .nav-item {
@@ -68,4 +69,9 @@ body {
 
 .figure-img:hover a {
   opacity: 100%;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-top: 100px;
 }
