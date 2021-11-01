@@ -42,7 +42,7 @@ body {
   font-weight: 600;
 }
 
-.features p, .designer p {
+.features p, .designer p, footer p {
   font-weight: 200;
   color: #B7B7B7;
 }
