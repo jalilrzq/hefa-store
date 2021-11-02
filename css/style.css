@@ -37,13 +37,13 @@ body {
   font-weight: 200;
 }
 
-.features h3, .designer h3 {
+.features h3, .designer h3, .similiar-product h3 {
   font-family: 'Lora';
   color: #1B2690;
   font-weight: 600;
 }
 
-.features p, .designer p, footer p {
+.features p, .designer p, footer p, .similiar-product p {
   font-weight: 200;
   color: #B7B7B7;
 }
@@ -144,7 +144,7 @@ body {
 }
 
 .product-review {
-  height: 300px;
+  max-height: 300px;
   overflow: scroll;
 }
 
@@ -156,4 +156,9 @@ body {
 
 .product-review p {
   font-size: 14px !important;
+}
+
+.similiar-product {
+  margin-top: 130px;
+  margin-bottom: 100px;
 }
