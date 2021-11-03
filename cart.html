@@ -48,7 +48,7 @@
   <!-- Checkout -->
   <section class="checkout">
     <div class="container">
-      <div class="row" style="margin-bottom: 100px;">
+      <div class="row justify-content-between" style="margin-bottom: 100px;">
         <div class="col-lg-6">
           <h4 class="mb-4">Your Items</h4>
           <div class="row mb-4">
@@ -68,7 +68,7 @@
                 <i class="fas fa-plus-circle"></i>
               </button>
             </div>
-            <div class="col-2">
+            <div class="col-2 text-right">
               <button type="button" class="btn btn-sm btn-danger" style="color: white;">
                 <i class="fas fa-times-circle"></i>
               </button>
@@ -91,7 +91,7 @@
                 <i class="fas fa-plus-circle"></i>
               </button>
             </div>
-            <div class="col-2">
+            <div class="col-2 text-right">
               <button type="button" class="btn btn-sm btn-danger" style="color: white;">
                 <i class="fas fa-times-circle"></i>
               </button>
@@ -114,7 +114,7 @@
                 <i class="fas fa-plus-circle"></i>
               </button>
             </div>
-            <div class="col-2">
+            <div class="col-2 text-right">
               <button type="button" class="btn btn-sm btn-danger" style="color: white;">
                 <i class="fas fa-times-circle"></i>
               </button>
@@ -122,7 +122,7 @@
           </div>
 
           <h4 class="mb-5" style="margin-top: 100px;">Your Address</h4>
-          <form action="">
+          <form action="" class="mb-5">
             <div class="form-group">
               <label for="address">Address</label>
               <input type="text" id="address" class="form-control" placeholder="Alamat lengkap">
@@ -151,13 +151,118 @@
             </div>
           </form>
 
-
         </div>
+
+        <div class="col-lg-5">
+          <div class="card rounded-0 checkout-detail">
+            <div class="card-body">
+              <h5 class="card-title">Informasi Biaya</h5>
+              <div class="row mb-3">
+                <div class="col">
+                  <h6 class="m-0">Jeans Pubb</h6>
+                  <small style="color: #B7B7B7;">20 items</small>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <h6 class="m-0 align-self-center text-success">IDR 3.806.000</h6>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <h6 class="m-0">Jeans Pubb</h6>
+                  <small style="color: #B7B7B7;">20 items</small>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <h6 class="m-0 align-self-center text-success">IDR 3.806.000</h6>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <h6 class="m-0">Jeans Pubb</h6>
+                  <small style="color: #B7B7B7;">20 items</small>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <h6 class="m-0 align-self-center text-success">IDR 3.806.000</h6>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <h6 class="m-0">Courier</h6>
+                  <small style="color: #B7B7B7;">JNT Express</small>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <h6 class="m-0 align-self-center text-success">IDR 201.000</h6>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <h6 class="m-0">Tax</h6>
+                  <small style="color: #B7B7B7;">Negara 15%</small>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <h6 class="m-0 align-self-center text-success">IDR 1.712.700</h6>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <h6 class="m-0">Eid Promo</h6>
+                  <small style="color: #B7B7B7;">10% OFF</small>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <h6 class="m-0 align-self-center text-danger">- IDR 1.141.800</h6>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <h6 class="m-0">Total Harga</h6>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <h6 class="m-0 align-self-center text-primary">IDR 12.189.900</h6>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col">
+              <button type="button" class="btn btn-block"
+                style="background-color: #EAEAEF; color: #ADADAD;">Cancel</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-block btn-warning text-white" data-toggle="modal"
+                data-target="#checkoutModal">Checkout</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
   <!-- AKhir Checkout -->
 
+  <!-- Modal Checkout -->
+  <!-- Modal -->
+  <div class="modal fade checkout-modal-success" id="checkoutModal" tabindex="-1" role="dialog"
+    aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img src="img/cart/sukses_checkout.png" class="mb-5">
+          <h3>Checkout Berhasil</h3>
+          <p>Anda akan mendapatkan barang anda <br> dalam beberapa hari</p>
+          <button href="index.html" type="button" class="btn mt-3" data-dismiss="modal"
+            style="background-color: #EAEAEF; color: #ADADAD;">Home</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Akhir Modal Checkout -->
 
   <!-- Footer -->
   <footer class="border-top p-5">
